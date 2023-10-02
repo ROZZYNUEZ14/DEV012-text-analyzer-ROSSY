@@ -37,9 +37,9 @@ const analyzer = {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberCount: (text) => {
-    const numeros1=text.match(/\d+(\.\d+)?/g).filter(numeros1=> !isNaN(parseFloat(numeros1)));
+    const numeros1=text.match(/\b\d+(\.\d+)?\b/g);
     
-    let contador = 0
+    /*let contador = 0
     for(let i = 0; i < numeros1.length; i ++){
       const numero = numeros1[i];
       if(!isNaN(numero)){
@@ -47,13 +47,14 @@ const analyzer = {
       }else{
         contador --
       }
-    }
-
-    /* if(numeros1=== true){
-      
-      return numeros1
     }*/
-    return contador;
+
+    if(numeros1 === null){
+      
+      return 0
+    }
+    const numeros2 = numeros1.filter(numeros1=> !isNaN(parseFloat(numeros1)))
+    return numeros2.length;
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberSum: (text) => {
