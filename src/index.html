@@ -8,6 +8,20 @@
 </head>
 
 <body>
+  <div class="container">
+    <header><h1>Analizador de Texto</h1></header>
+    <textarea name="user-input" cols="50" rows="10" placeholder="Escribe tu texto aquí"></textarea>
+    <ul type="none">
+      <li class="word-count" data-testid="word-count">Palabras: 0</li>
+      <li class="character-count" data-testid="character-count">Caracteres: 0</li>
+      <li class="character-no-spaces-count" data-testid="character-no-spaces-count">Caracteres sin espacios: 0</li>
+      <li class="number-count" data-testid="number-count">Números: 0</li>
+      <li class="number-sum" data-testid="number-sum">Suma de números: 0</li>
+      <li class="word-length-average" data-testid="word-length-average">Longitud: 0</li>
+    </ul>
+    <button id="reset-button">Limpiar</button>
+    <footer><p>Autor: Rossy Palacin</p></footer>
+  </div>
   <script src="index.js" type="module"></script>
 </body>
 </html>
