@@ -13,6 +13,7 @@ body{
     
     
 }
+
 header{
     color: aliceblue;
     background-color: black;
@@ -22,7 +23,7 @@ header{
     
 }
 
-[name="user-input"]{
+textarea[name ="user-input"]{
     color: white;
     padding: 30px;
     border-color: black;
@@ -38,9 +39,6 @@ header{
     border-radius: 5px 20px 5px 20px;
     float: left;
     margin: 5px;
-}
-
-.word-count{
     color: white;
     background-color: rgb(14, 14, 14);
 }
@@ -50,9 +48,6 @@ header{
     border-radius: 5px 20px 5px 20px;
     float: left;
     margin: 5px;
-}
-
-.character-count{
     color: white;
     background-color: rgb(14, 14, 14);
 }
@@ -63,9 +58,6 @@ header{
     border-radius: 5px 20px 5px 20px;
     float: left;
     margin: 5px;
-}
-
-.character-no-spaces-count{
     color: white;
     background-color: rgb(14, 14, 14);
 }
@@ -75,9 +67,6 @@ header{
     border-radius: 5px 20px 5px 20px;
     float: left;
     margin: 5px;
-}
-
-.number-count{
     color: white;
     background-color: rgb(14, 14, 14);
 }
@@ -87,9 +76,6 @@ header{
     border-radius: 5px 20px 5px 20px;
     float: left;
     margin: 5px;
-}
-
-.number-sum{
     color: white;
     background-color: rgb(14, 14, 14);
 }
@@ -99,9 +85,6 @@ header{
     border-radius: 5px 20px 5px 20px;
     float: left;
     margin: 5px;
-}
-
-.word-length-average{
     color: white;
     background-color: rgb(14, 14, 14);
 }
@@ -121,4 +104,8 @@ footer{
     border-radius: 30px 30px 5px 5px;
     padding: 1px 20px 1px 20px;
     margin: 30px;
+}
+
+.metric{
+    background-color: rgb(0, 0, 0);
 }
