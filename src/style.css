@@ -7,7 +7,7 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
 }
-.container{
+div{
     display: grid;
     place-items: center;
     
@@ -23,7 +23,7 @@ header{
     
 }
 
-textarea[name ="user-input"]{
+textarea[name="user-input"]{
     color: white;
     padding: 30px;
     border-color: black;
@@ -33,54 +33,7 @@ textarea[name ="user-input"]{
     font-family: "Courier New";
 }
 
-.word-count{
-    
-    padding: 10px;
-    border-radius: 5px 20px 5px 20px;
-    float: left;
-    margin: 5px;
-    color: white;
-    background-color: rgb(14, 14, 14);
-}
-
-.character-count{
-    padding: 10px;
-    border-radius: 5px 20px 5px 20px;
-    float: left;
-    margin: 5px;
-    color: white;
-    background-color: rgb(14, 14, 14);
-}
-
-
-.character-no-spaces-count{
-    padding: 10px;
-    border-radius: 5px 20px 5px 20px;
-    float: left;
-    margin: 5px;
-    color: white;
-    background-color: rgb(14, 14, 14);
-}
-
-.number-count{
-    padding: 10px;
-    border-radius: 5px 20px 5px 20px;
-    float: left;
-    margin: 5px;
-    color: white;
-    background-color: rgb(14, 14, 14);
-}
-
-.number-sum{
-    padding: 10px;
-    border-radius: 5px 20px 5px 20px;
-    float: left;
-    margin: 5px;
-    color: white;
-    background-color: rgb(14, 14, 14);
-}
-
-.word-length-average{
+.metric{   
     padding: 10px;
     border-radius: 5px 20px 5px 20px;
     float: left;
