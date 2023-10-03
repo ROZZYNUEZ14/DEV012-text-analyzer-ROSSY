@@ -14,29 +14,53 @@ Con mi prototipo buscaba sea parecido al ejemplo que nos brindaron al inicio del
 
 Realize mi proyecto fiel al prototipo, en donde aplique sobre todo los bordes redondeados para todo el proyecto, y asi darle un estilo más bonito y llevado a mis preferencias personales.
 
-## 3. Criterios de aceptación mínima aplicadas en el proyecto:
+## Funciones aplicadas en mi "TEXT ANALYZER"
 
-## HTML: Uso semántico de HTML
+### En JavaScript:
+-	Función addEventListener, con su respectivo evento o función.
+-	Metodos “.trim, .replace, .split, .filter, .match”
+-	Expresiones regulares
+-	Ciclos for y las condicionales if y else
 
-	La aplicación tiene un encabezado conformado por un <header> padre de un <h1> texto Analizador de texto. Para que puedas practicar más, estos elementos no pueden tener atributos id, ni name, ni class.
+### En CSS:
+-	Estilos de palabras (Font-Family)
+-	Background (image, repeat, size, color, etc)
+-	Display (grid)
+-	Place-items (para centrar elementos)
+-	Border(radius, style, color, width)
+-	Padding
+-	Margin
+-	Float (left)
 
-	La aplicación usa un <textarea> con un atributo nameen el valor user-inputpara permitir a la usuaria ingresar un texto. Para que puedas practicar más, este elemento no puede tener atributos id, ni class.
+### En HTML:
+-	Etiquetas:
+o	header
+o	textarea
+o	ul
+o	li
+o	button
+o	div
+o	footer
+o	script
+-	Atributos:
+o	class
+o	name
+o	id
 
-	La aplicación usa un <ul> con 6 hijos <li>, uno para mostrar cada métrica. Para que puedas practicar más, estos elementos no pueden tener atributos idni nameni hijos.
+## Pruebas
 
-	El <li> para mostrar el recuento de palabras debe tener un atributo data-testidcon valor word-count.
+### Pruebas unitarias:
+Una prueba unitaria es una técnica de prueba de software en la que se comprueba que cada componente individual de un programa o sistema funciona correctamente de manera aislada. En otras palabras, se prueba cada unidad de código por separado para asegurarse de que cumple con los requisitos y especificaciones.
 
-	El <li> para mostrar el recuento de caracteres debe tener un atributo data-testidcon valor character-count.
+'npm run test'
+![Alt text](image-2.png)
 
-	El <li> para mostrar el recuento de caracteres excluyendo espacios y signos de puntuación debe tener un atributo  data-testidcon valor character-no-spaces-count.
+### Pruebas de criterios mínimos de aceptación:
+'npm run test:oas'
+![Alt text](image-3.png)
 
-	El <li> para mostrar el recuento de números debe tener un atributo data-testidcon valor number-count.
+### Pruebas de extremo a extremo:
+Una prueba de extremo a extremo (E2E) es una técnica de prueba de software en la que se verifica el funcionamiento de todo el sistema desde el inicio hasta el final. En otras palabras, se prueba el flujo completo del software, simulando la interacción del usuario con la aplicación, para asegurarse de que todas las partes del sistema funcionan correctamente en conjunto.
 
-	El <li> para mostrar la suma total de números debe tener un atributo data-testidcon valor number-sum.
-
-	El <li> para mostrar la longitud media de las palabras debe tener un atributo data-testidcon valor word-length-average.
-
-	La aplicación tiene un pie de página conformado por un <footer> que es padre de un <p> que tiene como texto el nombre de la estudiante desarrolladora de la aplicación. Para que puedas practicar más, estos elementos no pueden tener atributos id, ni name, ni class.
-
-	La aplicación usa un <button> atributo iden el valor reset-buttonpara permitir a la usuaria, mediante un clic, limpiar el contenido de la caja de texto.
-
+'npm run test:e2e'
+![Alt text](image-4.png)

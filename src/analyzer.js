@@ -39,16 +39,6 @@ const analyzer = {
   getNumberCount: (text) => {
     const numeros1=text.match(/\b\d+(\.\d+)?\b/g);
     
-    /*let contador = 0
-    for(let i = 0; i < numeros1.length; i ++){
-      const numero = numeros1[i];
-      if(!isNaN(numero)){
-        contador ++
-      }else{
-        contador --
-      }
-    }*/
-
     if(numeros1 === null){
       
       return 0
